@@ -1,0 +1,66 @@
+/* General Styles */
+
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.3);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(145deg, #ff6347, #ff4500);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(255, 99, 71, 0.4);
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ff6347;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
